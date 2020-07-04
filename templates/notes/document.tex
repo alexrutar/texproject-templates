@@ -1,0 +1,23 @@
+<* extends "resources/other/base.tex" *>
+<* block document *>
+\title{\subject}
+\author{<+ user.name +>\thanks{\itshape <+ user.email +>}\\ <+ user.institution +>}
+\date{\semester\thanks{Last updated: \today}}
+
+\begin{document}
+\pagenumbering{gobble}
+\hypersetup{pageanchor=false}
+\maketitle
+\newpage
+\frontmatter
+\hypersetup{pageanchor=true}
+\tableofcontents*
+\chapter{Preface}
+REPLACE
+
+\mainmatter
+\chapter{REPLACE}
+REPLACE
+
+\end{document}
+<* endblock *>

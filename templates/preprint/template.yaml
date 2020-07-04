@@ -1,14 +1,22 @@
 doctype: amsart
+
 class_options:
     - 12pt
+
+geometry:
+    left: 3cm
+    top: 3.8cm
+    right: 3cm
 
 formatting: preprint
 
 bibstyle: plain
 
 macros:
+    - typesetting
     - general
     - refs
+    - theorem_simple
 
 constants:
     - shorttitlename

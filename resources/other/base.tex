@@ -1,6 +1,9 @@
-% Document created on <+ date +>
-
-\documentclass[<+ template.class_options|join(', ') +>]{<+ template.doctype +>}
+% Project created on <+ date +>
+% Author: <+ user.name +> (<+ user.email +>)
+\documentclass<* if template.class_options|length > 0 *>[<+ template.class_options|join(', ') +>]<* endif *>{<+ template.doctype +>}
+<* if template.geometry is not none *>
+\usepackage[<* for key, value in template.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
+<* endif *>
 
 % formatting package
 \usepackage{<+ local.formatting_name +>}

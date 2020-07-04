@@ -1,5 +1,6 @@
-\RequirePackage[hidelinks,pagebackref]{hyperref}
-\RequirePackage{xcolor}
+% This package must always be last
+\usepackage[hidelinks,pagebackref]{hyperref}
+\usepackage{xcolor}
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}
 \colorlet{mycitecolor}{orange!50!yellow}
@@ -11,4 +12,4 @@
     urlcolor   = myurlcolor!\myshade!black,
     colorlinks = true,
 }
-\RequirePackage[capitalise,nameinlink]{cleveref}
+\usepackage[capitalise,nameinlink]{cleveref}

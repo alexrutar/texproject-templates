@@ -1,4 +1,5 @@
 doctype: article
+class_options: []
 
 formatting: preprint
 
@@ -6,3 +7,4 @@ bibstyle: plain
 
 macros: []
 constants: []
+geometry:

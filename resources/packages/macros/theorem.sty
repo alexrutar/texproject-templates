@@ -1,0 +1,54 @@
+\RequirePackage[thmmarks,amsmath,hyperref]{ntheorem}
+
+% Numbered Statements
+\theoremstyle{change}
+\theoremindent\parindent
+\theorembodyfont{\itshape}
+\theoremheaderfont{\bfseries\boldmath}
+\newtheorem{theorem}{Theorem.}[section]
+\newtheorem{lemma}[theorem]{Lemma.}
+\newtheorem{corollary}[theorem]{Corollary.}
+\newtheorem{proposition}[theorem]{Proposition.}
+
+% Claim environment
+\theoremstyle{plain}
+\theorempreskip{0.2cm}
+\theorempostskip{0.2cm}
+\theoremheaderfont{\scshape}
+\newtheorem{claim}{Claim}
+\renewcommand\theclaim{\Roman{claim}}
+\AtBeginEnvironment{theorem}{\setcounter{claim}{0}}
+
+% Un-numbered Statements
+\theorempreskip{0.1cm}
+\theorempostskip{0.1cm}
+\theoremindent0.0cm
+\theoremstyle{nonumberplain}
+\theorembodyfont{\upshape}
+\theoremheaderfont{\bfseries\itshape}
+\newtheorem{definition}{Definition.}
+\theoremheaderfont{\itshape}
+\newtheorem{example}{Example.}
+\newtheorem{remark}{Remark.}
+
+% Proof / solution environments
+\theoremseparator{}
+\theoremheaderfont{\hspace*{\parindent}\scshape}
+\theoremsymbol{$//$}
+\newtheorem{solution}{Sol'n}
+\theoremsymbol{$\blacksquare$}
+\theorempostskip{0.4cm}
+\newtheorem{proof}{Proof}
+\theoremsymbol{}
+\newtheorem{nmproof}{Proof}
+
+% Format references
+\crefformat{equation}{(#2#1#3)}
+\Crefformat{theorem}{#2Thm. #1#3}
+\Crefformat{lemma}{#2Lem. #1#3}
+\Crefformat{proposition}{#2Prop. #1#3}
+\Crefformat{corollary}{#2Cor. #1#3}
+\crefformat{theorem}{#2Theorem #1#3}
+\crefformat{lemma}{#2Lemma #1#3}
+\crefformat{proposition}{#2Proposition #1#3}
+\crefformat{corollary}{#2Corollary #1#3}

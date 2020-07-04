@@ -1,0 +1,43 @@
+\RequirePackage{amsmath}
+
+% Fonts
+\RequirePackage{palatino}
+
+% Adjust numbering
+\numberwithin{equation}{section}
+\counterwithin{figure}{section}
+\counterwithout{section}{chapter}
+\counterwithin*{chapter}{part}
+
+% Footnote
+\setfootins{0.5cm}{0.5cm} % footer space above
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}} % footnote symbol
+
+% Table of Contents
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand*{\cftchaptername}{Chapter } % Place 'Chapter' before roman
+\setlength\cftchapternumwidth{4em} % Add space before chapter name
+\cftpagenumbersoff{chapter} % Turn off page numbers for chapter
+\maxtocdepth{subsection} % table of contents up to section
+
+% Section / Subsection headers
+\setsecnumdepth{subsection} % numbering up to and including "subsection"
+\newcommand*{\shortcenter}[1]{%
+    \sethangfrom{\noindent ##1}%
+    \Large\boldmath\scshape\bfseries
+    \centering
+\parbox{5in}{\centering #1}\par}
+\setsecheadstyle{\shortcenter}
+\setsubsecheadstyle{\large\scshape\boldmath\bfseries\raggedright}
+
+% Chapter Headers
+\chapterstyle{verville}
+
+% Page Headers / Footers
+\copypagestyle{myruled}{ruled} % Draw formatting from existing 'ruled' style
+\makeoddhead{myruled}{}{}{\scshape\subject}
+\makeevenfoot{myruled}{}{\thepage}{}
+\makeoddfoot{myruled}{}{\thepage}{}
+\pagestyle{myruled}
+\setfootins{0.5cm}{0.5cm}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
