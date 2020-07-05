@@ -1,18 +1,6 @@
 % Project created on <+ date +>
 % Author: <+ user.name +> (<+ user.email +>)
-\documentclass<* if template.class_options|length > 0 *>[<+ template.class_options|join(', ') +>]<* endif *>{<+ template.doctype +>}
-<* if template.geometry is not none *>
-\usepackage[<* for key, value in template.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
-<* endif *>
-
-% formatting package
-\usepackage{<+ local.formatting_name +>}
-
-% macro packages
-\usepackage{<+ conventions.project_macro_file +>}
-<* for pack in local.macro_names *>
-\usepackage{<+ pack +>}
-<* endfor *>
+\input{<+ conventions.classinfo_file +>}
 
 % constants
 <* for const in template.constants *>

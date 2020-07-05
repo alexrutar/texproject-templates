@@ -6,5 +6,6 @@ formatting: preprint
 bibstyle: plain
 
 macros: []
+citations: []
 constants: []
 geometry:

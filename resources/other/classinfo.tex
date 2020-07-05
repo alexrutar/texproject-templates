@@ -1,0 +1,13 @@
+\documentclass<* if template.class_options|length > 0 *>[<+ template.class_options|join(', ') +>]<* endif *>{<+ template.doctype +>}
+<* if template.geometry is not none *>
+\usepackage[<* for key, value in template.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
+<* endif *>
+
+% formatting package
+\usepackage{<+ template.formatting|safe_name('formatting') +>}
+
+% macro packages
+\usepackage{<+ conventions.project_macro_file +>}
+<* for pack in template.macros *>
+\usepackage{<+ pack|safe_name('macro') +>}
+<* endfor *>
