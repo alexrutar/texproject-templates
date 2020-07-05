@@ -3,9 +3,9 @@ project_macro_file: project-macros
 classinfo_file: ".classinfo"
 bibinfo_file: ".bibinfo"
 
-macro_prefix : macros
-formatting_prefix : format
-citation_prefix: citations
+macro_prefix : macro
+format_prefix : format
+citation_prefix: citation
 prefix_separator: '-'
 
 export_suffixes:

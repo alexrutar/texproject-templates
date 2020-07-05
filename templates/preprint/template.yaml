@@ -8,7 +8,7 @@ geometry:
     top: 3.8cm
     right: 3cm
 
-formatting: preprint
+format: preprint
 
 bibstyle: plain
 
