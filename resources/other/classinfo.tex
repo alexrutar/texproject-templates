@@ -7,7 +7,7 @@
 \usepackage{<+ template.format|safe_name('format') +>}
 
 % macro packages
-\usepackage{<+ conventions.project_macro_file +>}
+\usepackage{<+ config.project_macro_file +>}
 <* for pack in template.macros *>
 \usepackage{<+ pack|safe_name('macro') +>}
 <* endfor *>
