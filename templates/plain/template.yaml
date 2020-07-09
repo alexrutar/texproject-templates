@@ -1,25 +1,21 @@
-doctype: amsart
-
+doctype: article
 class_options:
     - 12pt
-
 geometry:
-    left: 3cm
-    top: 3.8cm
-    right: 3cm
+    left: 2.5cm
+    right: 2.5cm
+    top: 2.5cm
+    bottom: 3cm
 
 format: palatino
 
 bibstyle: plain
 
 macros:
-    - typesetting
     - general
+    - typesetting
     - refs
     - theorem_simple
 
 constants:
-    - shorttitlename
     - titlename
-    - docclasses
-    - dockeywords

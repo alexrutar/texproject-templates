@@ -1,15 +1,22 @@
 project_macro_file: project-macros
 
-classinfo_file: ".classinfo"
-bibinfo_file: ".bibinfo"
+classinfo_file: "classinfo"
+bibinfo_file: "bibinfo"
+project_data_folder: ".texproject"
+default_tex_name: "main"
 
 macro_prefix : macro
 format_prefix : format
 citation_prefix: citation
 prefix_separator: '-'
+default_compression: 'zip'
 
-export_suffixes:
-  - .tex
-  - .bib
-  - .pdf
-  - .sty
+export_ignore_patterns:
+  - "*.aux"
+  - "*.fdb_latexmk"
+  - "*.fls"
+  - "*.log"
+  - "*.out"
+  - "*.synctex.gz"
+  - "*.toc"
+  - "tmp*"
