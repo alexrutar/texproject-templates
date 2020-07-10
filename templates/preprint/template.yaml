@@ -19,7 +19,7 @@ macros:
     - theorem_simple
 
 constants:
-    - shorttitlename
     - titlename
+    - shorttitlename
     - docclasses
     - dockeywords
