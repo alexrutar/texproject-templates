@@ -1,5 +1,12 @@
 % \RequirePackage{bookmark}
-\RequirePackage[hidelinks,pagebackref]{hyperref}
+\RequirePackage[
+    backend=biber, 
+    natbib=true,
+    style=numeric,
+    sorting=none,
+    backref=true
+    ]{biblatex}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage{xcolor}
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}

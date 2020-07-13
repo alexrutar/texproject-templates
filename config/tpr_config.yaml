@@ -1,22 +1,33 @@
-project_macro_file: project-macros
-
+# project filename defaults
 classinfo_file: "classinfo"
 bibinfo_file: "bibinfo"
 project_data_folder: ".texproject"
 default_tex_name: "main"
-
-macro_prefix : macro
-format_prefix : format
-citation_prefix: citation
+project_macro_file: "project-macros"
+macro_prefix: "macro"
+format_prefix: "format"
+citation_prefix: "citation"
 prefix_separator: '-'
-default_compression: 'zip'
+replace_text: 'REPLACE'
 
-export_ignore_patterns:
+# default settings for CLI
+default_compression: 'zip'
+latex_compile_command: 'latexmk -pdf -silent -outdir=.texproject/aux'
+
+# ignore when exporting and in .gitignore
+ignore_patterns:
   - "*.aux"
+  - "*.bcf"
+  - "*.blg"
+  - "*.pgs"
+  - "*.bak"
+  - "*.mtc"
   - "*.fdb_latexmk"
   - "*.fls"
   - "*.log"
   - "*.out"
   - "*.synctex.gz"
   - "*.toc"
+  - "*.tar*"
+  - "*.zip"
   - "tmp*"

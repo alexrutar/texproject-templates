@@ -15,8 +15,8 @@ bibstyle: plain
 macros:
     - typesetting
     - general
-    - refs
-    - theorem_simple
+    - refs_ams
+    - theorem_ams
 
 constants:
     - titlename
