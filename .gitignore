@@ -1,1 +1,2 @@
-resources/citations/main.bib
+resources/citations/*.bib
+!resources/citations/example.bib

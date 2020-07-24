@@ -1,0 +1,31 @@
+<* extends "resources/other/base.tex" *>
+<* block document *>
+\begin{document}
+\par{\centering
+    {\Huge \textbf{Curriculum Vitae}\\\vspace{0.5cm}\huge \textit{<+ user.name +>}
+}\bigskip\par}
+\noindent
+
+\textit{Last Updated: \today}
+
+\begin{twocolsec}{Personal Information}
+    \textbf{Institution}   & <+ user.institution +> \\
+    \textbf{Email}     & \href{mailto:<+ user.email +>}{\texttt{<+ user.email +>}}\\
+    \textbf{Website}     & \href{<+ user.website +>}{\texttt{<+ user.website +>}}\\
+    \textbf{Other fields} & field content
+\end{twocolsec}
+
+\begin{twocolsec}{Section Title}
+    example & section with two columns
+\end{twocolsec}
+
+\begin{threecolsec}{Section Title}
+    example & section & with three columns
+\end{threecolsec}
+
+\begin{ensec}{Publications}
+    \item example with enumerate
+\end{ensec}
+
+\end{document}
+<* endblock *>
