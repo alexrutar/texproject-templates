@@ -1,0 +1,17 @@
+<* extends "resources/other/base.tex" *>
+<* block document *>
+
+\title{\titlename}
+\author{<+ user.name +>}
+\institute{<+ user.institution +>}
+\date{\today}
+\begin{document}
+\begin{frame}
+    \maketitle
+\end{frame}
+\begin{frame}
+    <+ replace +>
+\end{frame}
+
+\end{document}
+<* endblock *>

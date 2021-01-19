@@ -1,0 +1,19 @@
+\usetheme{default}
+\usecolortheme{beaver}
+\def\th@mystyle{%
+    \normalfont % body font
+    \setbeamercolor{block title example}{bg=orange,fg=white}
+    \setbeamercolor{block body example}{bg=orange!10,fg=black}
+    \def\inserttheoremblockenv{exampleblock}
+}
+\theoremstyle{mystyle}
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}

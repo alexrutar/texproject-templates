@@ -1,0 +1,13 @@
+doctype: beamer
+bibstyle: plain
+
+format: beamer
+
+macros:
+  - general
+  - typesetting
+  - refs_ams
+  - theorem_ams
+
+constants:
+  - titlename

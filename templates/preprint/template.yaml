@@ -10,7 +10,7 @@ geometry:
 
 format: palatino
 
-bibstyle: plain
+bibstyle: amsplain
 
 macros:
     - typesetting

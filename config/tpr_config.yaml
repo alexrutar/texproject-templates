@@ -1,4 +1,4 @@
-# project filename defaults
+# naming conventions used within the .texproject folder
 classinfo_file: "classinfo"
 bibinfo_file: "bibinfo"
 project_data_folder: ".texproject"
@@ -8,13 +8,22 @@ macro_prefix: "macro"
 format_prefix: "format"
 citation_prefix: "citation"
 prefix_separator: '-'
+
+arxiv_autotex:
+  - nohypertext
+  - nostamp
+
+# text substituted for fields which require user input
+#   if you use sublime text, you might prefer '<+ REPLACE +>'
 replace_text: 'REPLACE'
 
-# default settings for CLI
+# default compression algorithm when exporting
 default_compression: 'zip'
+
+# latex compliation command
 latex_compile_command: 'latexmk -pdf -silent -outdir=.texproject/aux'
 
-# ignore when exporting and in .gitignore
+# files to ignore when exporting and in .gitignore
 ignore_patterns:
   - "*.aux"
   - "*.bcf"
@@ -24,10 +33,16 @@ ignore_patterns:
   - "*.mtc"
   - "*.fdb_latexmk"
   - "*.fls"
+  - "*.brf"
+  - "*.run.xml"
   - "*.log"
   - "*.out"
   - "*.synctex.gz"
   - "*.toc"
   - "*.tar*"
   - "*.zip"
+  - "*.thm"
   - "tmp*"
+  - ".git*"
+  - ".DS_Store"
+  - "archive*"
