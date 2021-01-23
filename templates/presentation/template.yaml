@@ -4,7 +4,7 @@ bibstyle: plain
 format: beamer
 
 macros:
-  - general
+  - general_beamer
   - typesetting
 
 constants:
