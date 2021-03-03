@@ -5,6 +5,10 @@
     \setbeamercolor{block title example}{bg=orange,fg=white}
     \setbeamercolor{block body example}{bg=orange!10,fg=black}
     \def\inserttheoremblockenv{exampleblock}
+    \normalfont % body font
+    \setbeamercolor{block title theorem}{bg=orange,fg=white}
+    \setbeamercolor{block body theorem}{bg=orange!10,fg=black}
+    \def\inserttheoremblockenv{theoremblock}
 }
 \theoremstyle{mystyle}
 \AtBeginSection[]{
@@ -17,3 +21,4 @@
   \vfill
   \end{frame}
 }
+\setbeamertemplate{section in toc}[sections numbered]

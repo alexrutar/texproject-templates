@@ -1,6 +1,14 @@
 \RequirePackage{tikz, pgfplots}
 \pgfplotsset{compat=1.15}
-\usetikzlibrary{intersections,positioning,cd,calc}
+\usetikzlibrary{intersections,positioning,cd,calc,bending}
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{arrows,arrows.meta}
+\usetikzlibrary{patterns}
 \tikzcdset{arrow style=tikz,diagrams={>=stealth}}
+
+\tikzset{% 
+    lvtx/.style={circle,inner sep=1pt,draw=black},
+    vtx/.style={circle,inner sep=1.2pt,draw=black,fill=black},
+    elbl/.style={fill=white,circle,inner sep=1pt},
+    edge/.style={thick,->,>=stealth,shorten <=1pt,shorten >=1pt}
+}

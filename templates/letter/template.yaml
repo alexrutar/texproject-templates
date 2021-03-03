@@ -1,0 +1,19 @@
+doctype: letter
+class_options:
+    - 12pt
+geometry:
+    left: 3cm
+    right: 3cm
+    top: 2cm
+    bottom: 2cm
+
+format: palatino
+
+bibstyle: plain
+
+macros:
+    - general
+    - typesetting
+
+constants:
+    - recipientaddress

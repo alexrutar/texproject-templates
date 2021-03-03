@@ -1,0 +1,15 @@
+<* extends "resources/other/base.tex" *>
+<* block document *>
+\signature{<+ user.name +>}
+\address{<+ user.full_address | replace("\n","\\\\") +>}
+
+\begin{document}
+\begin{letter}{\recipientaddress}
+\opening{To Whom It May Concern:}
+
+<+ replace +>
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
+<* endblock *>
