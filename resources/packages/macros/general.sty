@@ -1,6 +1,7 @@
 \RequirePackage{amsmath,amssymb,amsfonts}
 \RequirePackage{stmaryrd}
 \SetSymbolFont{stmry}{bold}{U}{stmry}{m}{n} % fix missing bold font error
+\RequirePackage{soul}
 
 \RequirePackage{graphicx}
 \RequirePackage{IEEEtrantools}
@@ -21,7 +22,11 @@
 \DeclareMathOperator{\Id}{Id}
 \DeclareMathOperator{\Tr}{Tr}
 
-% Definition
+% note and todo
+\newcommand{\todo}[1]{\hl{\textbf{TODO:} #1}}
+% \newcommand{\note}[1]{\colorbox{green}{\textbf{Note:} #1}}
+
+% definition
 \newcommand{\defn}[1]{\emph{#1}}
 
 % proof implications

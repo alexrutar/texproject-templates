@@ -17,8 +17,8 @@ macros:
     - typesetting
     - general
     - tikz
-    - refs
     - theorem
+    - refs
 
 constants:
     - subject

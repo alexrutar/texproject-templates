@@ -43,6 +43,6 @@ ignore_patterns:
   - "*.zip"
   - "*.thm"
   - "tmp*"
-  - ".git*"
+  - ".git"
   - ".DS_Store"
   - "archive*"
