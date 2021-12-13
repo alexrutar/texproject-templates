@@ -1,0 +1,34 @@
+name: Build LaTeX document
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "<+ config.default_tex_name +>.tex"
+      - name: Rename file
+        run: mv "<+ config.default_tex_name +>.pdf" "${{ github.event.repository.name }}.pdf"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "${{ github.event.repository.name }}.pdf"
+<* if user.github_archive *>
+      - name: Push file to website repository
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: "${{ github.event.repository.name }}.pdf"
+          destination_repo: '<+ user.github_archive.repo +>'
+          destination_folder: '<+ user.github_archive.folder +>'
+          user_email: '<+ user.email +>'
+          user_name: '<+ user.github_archive.username +>'
+          commit_message: 'GitHub Actions: Automatic paper update'
+<*- endif *>
