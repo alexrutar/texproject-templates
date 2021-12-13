@@ -4,8 +4,10 @@ classinfo_file = 'classinfo'
 # the root of the .tex file in the the working directory
 default_tex_name = 'main'
 
-# macro file for user-supplied macros
+# other config files at the root
+metadata_file = 'metadata.toml'
 project_macro_file = 'project-macros'
+
 
 citation_prefix = 'citation'
 format_prefix = 'format'
