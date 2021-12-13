@@ -24,7 +24,7 @@ replace_text = 'REPLACE'
 default_compression = 'zip'
 
 # latex compilation command
-latex_compile_command = 'latexmk -pdf -file-line-error -interaction=nonstopmode -Werror'
+latex_compile_command = 'latexmk -pdf -silent -file-line-error -interaction=nonstopmode -Werror'
 
 # options given to arxiv autotex
 arxiv_autotex = [
