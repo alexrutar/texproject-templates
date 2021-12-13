@@ -26,9 +26,10 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: "${{ github.event.repository.name }}.pdf"
-          destination_repo: '<+ user.github_archive.repo +>'
-          destination_folder: '<+ user.github_archive.folder +>'
+          destination_repo: '<+ user.github.username +>/<+ user.github.archive.repo +>'
+          destination_branch: '<+ user.github.archive.branch +>'
+          destination_folder: '<+ user.github.archive.folder +>'
           user_email: '<+ user.email +>'
-          user_name: '<+ user.github_archive.username +>'
-          commit_message: 'GitHub Actions: Automatic paper update'
+          user_name: '<+ user.github.username +>'
+          commit_message: 'CI bot: paper update from ${{ github.event.repository.name }}'
 <*- endif *>
