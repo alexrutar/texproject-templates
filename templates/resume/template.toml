@@ -1,0 +1,17 @@
+doctype = 'article'
+class_options = [ '12pt' ]
+
+bibstyle = 'plain'
+format = 'palatino'
+
+macros = [
+    'typesetting',
+    'general',
+    'refs',
+    'resume'
+]
+
+[geometry]
+left = '2.5cm'
+right = '3cm'
+top = '2.5cm'

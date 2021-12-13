@@ -1,0 +1,9 @@
+doctype = 'standalone'
+class_options = [ 'tikz' ]
+
+format = 'palatino'
+
+macros = [
+    'general',
+    'typesetting'
+]

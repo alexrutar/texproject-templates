@@ -1,0 +1,15 @@
+name = 'John Doe'
+address = '123 Example Ave, City, ON'
+email = 'your@email.com'
+institution = 'Nonexistent University'
+website = 'https://your.domain'
+grant = 'Prestigious Funder Grant 123456'
+
+[github]
+username = 'gh_username'
+repo_api_token = '/path/to/retrival/command'
+
+[github.archive]
+repo = 'reponame'
+folder = 'path/to/export/folder'
+branch = 'main'

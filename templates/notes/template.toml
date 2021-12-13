@@ -1,0 +1,24 @@
+doctype = 'memoir'
+class_options = [ '11pt', 'a4paper' ]
+
+bibstyle = 'plain'
+format = 'notes'
+
+macros = [
+    'typesetting',
+    'general',
+    'tikz',
+    'theorem',
+    'refs'
+]
+
+constants = [
+    'subject',
+    'semester'
+]
+
+[geometry]
+bottom = '4cm'
+left = '3cm'
+right = '3cm'
+top = '3cm'

@@ -1,0 +1,20 @@
+doctype = 'article'
+class_options = [ '12pt' ]
+
+bibstyle = 'plain'
+format = 'times'
+
+macros = [
+    'typesetting',
+    'refs'
+]
+
+constants = [
+    'titlename'
+]
+
+[geometry]
+bottom = '3cm'
+left = '2.5cm'
+right = '2.5cm'
+top = '3cm'

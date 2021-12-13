@@ -1,0 +1,58 @@
+bibinfo_file = 'bibinfo'
+classinfo_file = 'classinfo'
+
+# the root of the .tex file in the the working directory
+default_tex_name = 'main'
+
+# macro file for user-supplied macros
+project_macro_file = 'project-macros'
+
+citation_prefix = 'citation'
+format_prefix = 'format'
+macro_prefix = 'macro'
+prefix_separator = '-'
+
+# data folder
+project_data_folder = '.texproject'
+
+# text subsituted for fields which require user input
+replace_text = 'REPLACE'
+
+# default compression algorithm when exporting
+default_compression = 'zip'
+
+# latex compilation command
+latex_compile_command = 'latexmk -pdf -file-line-error -interaction=nonstopmode -Werror'
+
+# options given to arxiv autotex
+arxiv_autotex = [
+    'nohypertext',
+    'nostamp'
+]
+
+# files to ignore when exporting source files, and in .gitignore
+ignore_patterns = [
+    '*.aux',
+    '*.bak',
+    '*.bbl',
+    '*.bcf',
+    '*.blg',
+    '*.brf',
+    '*.fdb_latexmk',
+    '*.fls',
+    '*.log',
+    '*.mtc',
+    '*.out',
+    '*.pdf',
+    '*.pgs',
+    '*.run.xml',
+    '*.synctex.gz',
+    '*.tar*',
+    '*.thm',
+    '*.toc',
+    '*.zip',
+    '.DS_Store',
+    '.git',
+    'archive*',
+    'tmp'
+]

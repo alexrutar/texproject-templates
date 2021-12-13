@@ -1,0 +1,13 @@
+doctype = 'beamer'
+
+bibstyle = 'plain'
+format = 'beamer'
+
+macros = [
+    'general_beamer',
+    'typesetting'
+]
+
+constants = [
+    'titlename'
+]
