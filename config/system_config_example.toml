@@ -8,7 +8,7 @@ default_tex_name = 'main'
 metadata_file = 'metadata.toml'
 project_macro_file = 'project-macros'
 
-
+# template naming conventions
 citation_prefix = 'citation'
 format_prefix = 'format'
 macro_prefix = 'macro'
@@ -23,9 +23,7 @@ replace_text = 'REPLACE'
 # default compression algorithm when exporting
 default_compression = 'zip'
 
-# latex compilation command
-latex_compile_command = 'latexmk -pdf -silent -file-line-error -interaction=nonstopmode -Werror'
-# always called with -pdf -interaction=nonstopmode so that it can be run without user input
+# additional options for latexmk
 latexmk_compile_options = [
     '-silent',
     '-Werror',
