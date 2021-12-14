@@ -26,7 +26,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: "${{ github.event.repository.name }}.pdf"
-          destination_repo: '<+ config.github.username +>/<+ user.github.archive.repo +>'
+          destination_repo: '<+ config.github.username +>/<+ config.github.archive.repo +>'
           destination_branch: '<+ config.github.archive.branch +>'
           destination_folder: '<+ config.github.archive.folder +>'
           user_email: '<+ config.github.email +>'

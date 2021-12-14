@@ -1,13 +1,13 @@
-\documentclass<* if template.class_options|length > 0 *>[<+ template.class_options|join(', ') +>]<* endif *>{<+ template.doctype +>}
-<* if template.geometry is not none *>
-\usepackage[<* for key, value in template.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
+\documentclass<* if local.class_options|length > 0 *>[<+ local.class_options|join(', ') +>]<* endif *>{<+ local.doctype +>}
+<* if local.geometry is not none *>
+\usepackage[<* for key, value in local.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
 <* endif *>
 
 % format package
-\usepackage{<+ config.project_data_folder +>/<+ template.format|safe_name('format') +>}
+\usepackage{<+ config.project_data_folder +>/<+ local.format|safe_name('format') +>}
 
 % macro packages
-<* for pack in template.macros *>
+<* for pack in local.macros *>
 \usepackage{<+ config.project_data_folder+>/<+ pack|safe_name('macro') +>}
 <* endfor *>
 \usepackage{<+ config.project_macro_file +>}
