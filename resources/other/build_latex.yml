@@ -19,17 +19,17 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: "${{ github.event.repository.name }}.pdf"
-<* if user.github.archive *>
+<* if config.github.archive *>
       - name: Push file to website repository
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: "${{ github.event.repository.name }}.pdf"
-          destination_repo: '<+ user.github.username +>/<+ user.github.archive.repo +>'
-          destination_branch: '<+ user.github.archive.branch +>'
-          destination_folder: '<+ user.github.archive.folder +>'
-          user_email: '<+ user.email +>'
-          user_name: '<+ user.github.username +>'
+          destination_repo: '<+ config.github.username +>/<+ user.github.archive.repo +>'
+          destination_branch: '<+ config.github.archive.branch +>'
+          destination_folder: '<+ config.github.archive.folder +>'
+          user_email: '<+ config.github.email +>'
+          user_name: 'CI Bot'
           commit_message: "CI bot: paper update from ${{ github.event.repository.name }}"
 <*- endif *>

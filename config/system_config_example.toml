@@ -25,6 +25,12 @@ default_compression = 'zip'
 
 # latex compilation command
 latex_compile_command = 'latexmk -pdf -silent -file-line-error -interaction=nonstopmode -Werror'
+# always called with -pdf -interaction=nonstopmode so that it can be run without user input
+latexmk_compile_options = [
+    '-silent',
+    '-Werror',
+    '-file-line-error'
+]
 
 # options given to arxiv autotex
 arxiv_autotex = [
@@ -58,3 +64,17 @@ ignore_patterns = [
     'archive*',
     'tmp'
 ]
+
+# initialize github settings
+[github]
+username = "johnd"
+email = "john@email.com"
+
+[github.keyring]
+username = 'johnd'
+entry = 'github_cli_token'
+
+[github.archive]
+repo = 'paper_archive'
+folder = 'pdfs'
+branch = 'main'
