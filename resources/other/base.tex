@@ -3,7 +3,7 @@
 \input{<+ config.project_data_folder +>/<+ config.classinfo_file +>}
 
 % constants
-<* for const in local.constants *>
+<* for const in template.constants *>
 \newcommand{\<+ const +>}{<+ replace +>}
 <* endfor *>
 

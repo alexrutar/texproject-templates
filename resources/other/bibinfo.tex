@@ -1,6 +1,6 @@
-<* if local.citations|length > 0 *>
-\bibliographystyle{<+ local.bibstyle +>}
-\bibliography{<+ config.project_data_folder +>/<+ local.citations|map('safe_name','citation')|join(', ') +>}
+<* if template.citations|length > 0 *>
+\bibliographystyle{<+ template.bibstyle +>}
+\bibliography{<+ config.project_data_folder +>/<+ template.citations|map('safe_name','citation')|join(', ') +>}
 <* else *>
 % no bibliography files specified
 <* endif *>
