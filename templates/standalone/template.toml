@@ -1,7 +1,7 @@
 doctype = 'standalone'
 class_options = [ 'tikz' ]
 
-style = 'palatino'
+styles = ['palatino']
 
 macros = [
     'general',

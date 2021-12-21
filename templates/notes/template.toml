@@ -2,7 +2,7 @@ doctype = 'memoir'
 class_options = [ '11pt', 'a4paper' ]
 
 bibstyle = 'plain'
-style = 'notes'
+styles = ['notes']
 
 macros = [
     'typesetting',

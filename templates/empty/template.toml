@@ -1,2 +1,2 @@
 doctype = 'article'
-style = 'empty'
+styles = ['empty']

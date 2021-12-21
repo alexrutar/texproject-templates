@@ -1,7 +1,7 @@
 doctype = 'beamer'
 
 bibstyle = 'plain'
-style = 'beamer'
+styles = ['beamer']
 
 macros = [
     'general_beamer',

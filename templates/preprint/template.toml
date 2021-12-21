@@ -2,7 +2,7 @@ doctype = 'amsart'
 class_options = [ '12pt' ]
 
 bibstyle = 'amsplain'
-style = 'palatino'
+styles = ['palatino']
 
 macros = [
     'typesetting',
