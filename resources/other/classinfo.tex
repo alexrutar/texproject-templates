@@ -4,10 +4,10 @@
 <* endif *>
 
 % style package
-\usepackage{<+ config.project_data_folder +>/<+ template.style|safe_name('style') +>}
+\usepackage{<+ config.project_data_folder +>/<+ template.style|data_name('style') +>}
 
 % macro packages
 <* for pack in template.macros *>
-\usepackage{<+ config.project_data_folder+>/<+ pack|safe_name('macro') +>}
+\usepackage{<+ config.project_data_folder+>/<+ pack|data_name('macro') +>}
 <* endfor *>
 \usepackage{<+ config.project_macro_file +>}
