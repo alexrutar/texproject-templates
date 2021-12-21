@@ -10,7 +10,7 @@ project_macro_file = 'project-macros'
 
 # template naming conventions
 citation_prefix = 'citation'
-format_prefix = 'format'
+style_prefix = 'style'
 macro_prefix = 'macro'
 prefix_separator = '-'
 

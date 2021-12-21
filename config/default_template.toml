@@ -1,7 +1,7 @@
 doctype = 'article'
 class_options = []
 
-format = 'empty'
+style = 'empty'
 bibstyle = 'plain'
 
 citations = []

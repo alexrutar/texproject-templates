@@ -3,8 +3,8 @@
 \usepackage[<* for key, value in template.geometry.items() *><+ key +>=<+ value +><+ ', ' if not loop.last +><* endfor *>]{geometry}
 <* endif *>
 
-% format package
-\usepackage{<+ config.project_data_folder +>/<+ template.format|safe_name('format') +>}
+% style package
+\usepackage{<+ config.project_data_folder +>/<+ template.style|safe_name('style') +>}
 
 % macro packages
 <* for pack in template.macros *>

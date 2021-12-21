@@ -2,7 +2,7 @@ doctype = 'article'
 class_options = [ '12pt' ]
 
 bibstyle = 'plain'
-format = 'palatino'
+style = 'palatino'
 
 macros = [
     'typesetting',
