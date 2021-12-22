@@ -1,2 +1,3 @@
 resources/citations/*.bib
 !resources/citations/example.bib
+.DS_store
