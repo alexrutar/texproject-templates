@@ -1,3 +1,0 @@
-<* for pat in process.ignore_patterns *>
-<+ pat +>
-<* endfor *>

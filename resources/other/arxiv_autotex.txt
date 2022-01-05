@@ -1,3 +1,0 @@
-<* for opt in config.arxiv_autotex *>
-<+ opt +>
-<* endfor *>
