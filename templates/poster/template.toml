@@ -1,0 +1,9 @@
+doctype = 'tikzposter'
+class_options = [ '25pt', 'a0paper', 'landscape' ]
+
+bibstyle = 'plain'
+styles = ['poster']
+
+macros = [
+    'general'
+]
