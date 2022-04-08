@@ -5,5 +5,8 @@ bibstyle = 'plain'
 styles = ['poster']
 
 macros = [
-    'general'
+    'general',
+    'theorem_poster',
+    'analysis',
+    'fractals'
 ]
