@@ -19,6 +19,11 @@
 \renewcommand\theclaim{\Roman{claim}}
 \AtBeginEnvironment{theorem}{\setcounter{claim}{0}}
 
+% Case environment
+\newcounter{casect}
+\AtBeginEnvironment{proof}{\setcounter{casect}{0}}
+\newcommand{\case}[1]{\stepcounter{casect}\textit{Case \thecasect: #1.}}
+
 % Un-numbered Statements
 \theorempreskip{0.1cm}
 \theorempostskip{0.1cm}

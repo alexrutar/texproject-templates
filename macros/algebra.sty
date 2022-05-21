@@ -1,6 +1,31 @@
 \RequirePackage{amsmath}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\Frac}{Frac}
 \DeclareMathOperator{\GL}{GL}
-\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Gal}{Gal}
 \DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Nil}{Nil}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\chr}{char}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\disc}{disc}
 \DeclareMathOperator{\llangle}{\langle\!\langle}
+\DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\rrangle}{\rangle\!\rangle}
+\DeclareMathOperator{\spn}{span}
+
+% Lagrange symbol
+\newcommand{\lgs}[2]{\ensuremath{\left(\frac{#1}{#2}\right)}}
+
+% Quotient (larger in display mode)
+\newcommand{\quot}[2]{\mathchoice{\left.\raisebox{0.07em}{$#1$}\middle/\raisebox{-0.07em}{$#2$}\right.}
+                                 {\left.\raisebox{0.03em}{$#1$}\middle/\raisebox{-0.03em}{$#2$}\right.}
+                                 {\left.\raisebox{0.00em}{$#1$}\middle/\raisebox{-0.00em}{$#2$}\right.}
+                                 {\left.\raisebox{0em}{$#1$}\middle/\raisebox{0em}{$#2$}\right.}}
