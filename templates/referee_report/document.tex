@@ -1,0 +1,23 @@
+<* extends "base.tex" *>
+<* block document *>
+\pagestyle{fancy}
+\lhead{Referee Report}
+\rhead{\today}
+\cfoot{\thepage}
+
+\begin{document}
+\title{Report on the paper ``\papername''}
+\author{\journal}
+\maketitle
+<+ replace +>
+\subsection*{Comments on the paper}
+\subsection*{Major comments}
+\begin{enumerate}
+    \item <+ replace +>
+\end{enumerate}
+\subsection*{Minor comments}
+\begin{enumerate}[resume]
+    \item <+ replace +>
+\end{enumerate}
+\end{document}
+<* endblock *>
