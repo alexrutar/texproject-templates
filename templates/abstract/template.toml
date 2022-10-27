@@ -1,0 +1,25 @@
+doctype = 'article'
+class_options = [ '12pt' ]
+
+bibstyle = 'plain'
+styles = ['palatino-header']
+
+macros = [
+    'general',
+    'typesetting',
+    'doublespacing',
+    'fractals',
+    'refs_ams',
+    'theorem_ams'
+]
+
+constants = [
+    'talktitle',
+    'talkdate'
+]
+
+[geometry]
+bottom = '3cm'
+left = '3cm'
+right = '3cm'
+top = '3cm'
