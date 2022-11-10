@@ -7,8 +7,8 @@ styles = ['palatino-header']
 macros = [
     'general',
     'typesetting',
-    'refs_ams',
-    'theorem_ams'
+    'refs',
+    'theorem'
 ]
 
 constants = [
