@@ -1,6 +1,15 @@
+\RequirePackage{stmaryrd}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[protrusion=true,expansion=true]{microtype}
 \RequirePackage[french,english]{babel}
 \RequirePackage{etoolbox}
 \RequirePackage{csquotes}
+\SetSymbolFont{stmry}{bold}{U}{stmry}{m}{n} % fix missing bold font error
+\RequirePackage{soulutf8}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{bm}
+
+% todo
+\newcommand{\todo}[1]{\hl{\textbf{TODO:} #1}}
