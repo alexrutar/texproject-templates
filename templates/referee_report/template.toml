@@ -2,12 +2,14 @@ doctype = 'article'
 class_options = [ '12pt' ]
 
 bibstyle = 'plain'
-styles = ['palatino-header']
+styles = [
+    'palatino-header',
+    'doublespacing'
+]
 
 macros = [
     'general',
     'typesetting',
-    'doublespacing',
     'fractals',
     'refs_ams',
     'theorem_ams'
