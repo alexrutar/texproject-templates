@@ -3,8 +3,7 @@ class_options = [ '12pt' ]
 
 bibstyle = 'plain'
 styles = [
-    'palatino-header',
-    'doublespacing'
+    'palatino-header'
 ]
 
 macros = [
@@ -19,6 +18,8 @@ constants = [
     'papername',
     'journal'
 ]
+
+spacing = "double"
 
 [geometry]
 bottom = '3cm'

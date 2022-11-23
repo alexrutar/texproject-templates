@@ -4,7 +4,6 @@ class_options = [ '12pt' ]
 bibstyle = 'plain'
 styles = [
     'palatino-header',
-    'doublespacing'
 ]
 
 macros = [
@@ -19,6 +18,8 @@ constants = [
     'talktitle',
     'talkdate'
 ]
+
+spacing = 'double'
 
 [geometry]
 bottom = '3cm'
