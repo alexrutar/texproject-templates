@@ -16,7 +16,7 @@ macros = [
 
 constants = [
     'papername',
-    'journal'
+    'journalname'
 ]
 
 spacing = "double"
