@@ -1,4 +1,5 @@
 \RequirePackage{amsthm}
+\RequirePackage{etoolbox}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -14,8 +15,14 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{question}[theorem]{Question}
-\newtheorem{proofpart}{Part}
 
+% proofpart within proof
+\newtheorem{proofpart}{Part}
+\renewcommand\theproofpart{\arabic{proofpart}}
+\numberwithin{equation}{section}
+\AtBeginEnvironment{proof}{\setcounter{proofpart}{0}}
+
+% special theorems for introduction, etc.
 \newtheorem{itheorem}{Theorem}[section]
 \renewcommand*{\theitheorem}{\Alph{itheorem}}
 \newtheorem{icorollary}[itheorem]{Corollary}
@@ -26,6 +33,3 @@
 \newtheorem{example}[theorem]{Example}
 \newtheorem{exercise}[theorem]{Exercise}
 \newtheorem{remark}[theorem]{Remark}
-
-\renewcommand\theproofpart{\arabic{proofpart}}
-\numberwithin{equation}{section}
